@@ -6,9 +6,12 @@ public:
         int first = 0;
 
         if(n<2){
-            return nums[0];
+            if(n==2)
+                return max(nums[0], nums[1]);
+            else
+                return nums[0];
         }
-        
+
         int second = nums[0];
         int third = nums[1];
 
