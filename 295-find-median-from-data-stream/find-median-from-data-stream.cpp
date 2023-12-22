@@ -9,13 +9,6 @@ public:
             higher.push(lower.top());
             lower.pop();
         }
-        // if (lower.size()==0){
-        //     lower.push(num);
-        //     return;
-        // }
-        // if (higher.size()==0){
-        //     higher.push(num);
-        // }
         while(higher.size()> 0 && lower.top() > higher.top()){
             int temp = higher.top();
             higher.pop();
